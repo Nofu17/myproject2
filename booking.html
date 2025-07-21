@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حجز موعد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>حجز موعدك</h1></header>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="booking.html">احجز موعد</a>
+  </nav>
+  <main>
+    <form id="bookingForm">
+      <label>الاسم:</label><input type="text" id="name" required>
+      <label>البريد الإلكتروني:</label><input type="email" id="email" required>
+      <label>التاريخ:</label><input type="date" id="date" required>
+      <label>الوقت:</label><input type="time" id="time" required>
+      <button type="submit">إرسال الحجز</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

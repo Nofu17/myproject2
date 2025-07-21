@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تأكيد الحجز</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>تم تأكيد حجزك!</h1></header>
+  <main id="details">
+    <!-- تفاصيل الحجز ستظهر هنا -->
+  </main>
+  <a href="index.html">العودة للرئيسية</a>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const details = document.getElementById('details');
+    details.innerHTML = `
+      <p>الاسم: ${params.get('name')}</p>
+      <p>البريد: ${params.get('email')}</p>
+      <p>التاريخ: ${params.get('date')}</p>
+      <p>الوقت: ${params.get('time')}</p>
+    `;
+  </script>
+</body>
+</html>
